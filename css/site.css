@@ -4,13 +4,13 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #858585;
+  background-color: #888;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3,p {
+h1,h2,p {
   font-family: sans-serif;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -18,7 +18,7 @@ h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
