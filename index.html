@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- This title is used for tabs and bookmarks -->
 	<title>Jiecheng's Homepage</title>
-
-	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<style>
+		body {
+		  background-image: url('./img/background.jpg');
+		  background-size: 1500px;
+		}
+	</style>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-
-	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Jiecheng's Homepage</h1>
-			<div class="minor-section">
-					<!-- Note that all filenames use lowercase and no spaces -->
-					<img class="codes-photo" src="./img/codes.jpg">
-					<h2>About Me</h2>
-					<p>Hi, I'm Jiecheng.</p>
-			</div>
+	<div>
+		<h1>Jiecheng's Homepage</h1>
+		<img class="codes-photo" src="./img/selfie.jpg">
+		<h2>About Me</h2>
+		<p>Hi, I'm Jiecheng Zhu. I majored in computer science. 
+			My interest usually is taking photos of natural scenery, 
+			especially the sky of various colors.</p>
+	</div>
 
-		</section>
-		<nav id="links">
-			<!-- Put links to labs here. -->
-		</nav>
-	</main>
+	<div class="assignments major-section">
+		<h2>Labs</h2>
+		<ul>
+			<li><a href="lab2/index.html">Lab 2: HTML & CSS Starter</a></li>
+			<li><a href="lab3/index.html">Lab 3: File Structure and File Transfer</a></li>
+			<li><a href="lab4/index.html">Lab 4: Pseudocoding and Problem-solving</a></li>
+			<li><a href="lab5/index.html">Lab 5: Data Types and Variables</a></li>
+			<li><a href="lab6/index.html">Lab 6: Arrays and Objects</a></li>
+		</ul>
+	</div>
 </body>
 </html>
