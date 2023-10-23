@@ -1,51 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
-
-	<!-- Use UTF character set, a good idea with any webpage -->
-  	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<title>Lab 4 - Pseudocoding and Problem-solving</title>
+	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Pseudocoding and Problem-solving</h1>
+			<div class="minor-section">
+				<h2>Introduction</h2>
+				<p>In order to better explore pseudocoding and problem-solving, we first start with some problems in real life.</p>
+				<p>A clogged floor drain can be a common household issue that can cause water to pool in undesired areas. Here's how to fix a clogged floor drain:</p>
+				<ul>
+					<li>1. Safety First: Before you begin, ensure your safety. Wear gloves and eye protection, as you might encounter dirty water or debris.</li>
+					<li>2. Identify the Problem: Determine the cause of the clog. Floor drains can become clogged due to a variety of reasons, such as dirt, debris, soap scum, or hair buildup. Knowing the cause will help you decide the best method for clearing the clog.</li>
+					<li>3. Remove the Cover: Most floor drains have a removable cover. Use a screwdriver or a suitable tool to lift the cover off carefully.</li>
+					<li>4. Clear Visible Debris: If you can see the clog, use your gloved hands or a tool like needle-nose pliers to remove any visible debris.</li>
+					<li>5. Use a Plunger: If the clog is not visible, try using a plunger. Fill the drain with enough water to submerge the plunger's rubber cup, then create a tight seal over the drain and push and pull the plunger to create suction. This may dislodge the clog.</li>
+					<li>6. Use a Drain Snake/Auger: If the plunger doesn't work, a drain snake or auger is a more effective tool. Insert the snake into the drain until you feel resistance, then turn the handle clockwise to break up the clog. Slowly retract the snake, bringing the clog with it.</li>
+					<li>7. Chemical Drain Cleaners (As a Last Resort): Chemical drain cleaners can be effective but should be a last resort due to their harsh chemicals. Follow the product's instructions carefully, and wear protective gear. Pour the cleaner down the drain, wait for the recommended time, then flush with plenty of water.</li>
+					<li>8. Boiling Water: In some cases, especially if the clog is due to grease or soap scum, pouring a large pot of boiling water down the drain can help dislodge the obstruction.</li>
+					<li>9. Regular Maintenance: To prevent future clogs, consider regular maintenance. Pour a mixture of vinegar and baking soda down the drain every few months, followed by boiling water. This can help keep the drain clear.</li>
+					<li>10. Call a Professional: If all else fails, or if you suspect a more serious issue like a damaged pipe, it's best to call a professional plumber to inspect and fix the problem.</li>
+					<li>Remember that some floor drains are connected to a larger drainage system, so if you're not confident in your abilities, it's always a good idea to consult a professional plumber. Additionally, taking preventive measures by using strainers in your floor drains can help reduce the chances of clogs in the future.</li>
+				</ul>	
+			</div>
+
+			<div class="minor-section">
+				<h2>Problem-solving</h2>
+				<p>Next, look for a simple game, rock-paper-scissors, and try to find out its steps on the computer.</p>
+				<ul>
+					<li>1. Create variables to track player and computer choices and scores.</li>
+					<li>2. Set up a loop that allows the game to run multiple times until the player decides to quit.</li>
+					<li>3. Within the loop, display a menu that allows the player to choose between rock, paper, or scissors, as well as the option to exit the game.</li>
+					<li>4. Players are prompted to enter their choice (rock, paper, or scissors) and validate their input.</li>
+					<li>5. Computer-generated random selection (rock, paper, or scissors).</li>
+					<li>6. Compare the player and computer choices to determine the winner of the round according to the rules of rock-paper-scissors.</li>
+					<li>7. Update scores based on round results.</li>
+					<li>8. Display the results of this round, including the player's choice, the computer's choice, and the winner of this round.</li>
+					<li>9. Ask the player if they want to play another round. If not, exit the game loop.</li>
+					<li>10. After the player exited the game loop, display the final score.</li>
+				</ul>
+			</div>
+
+			<div class="minor-section">
+				<h2>Pseudocode</h2>
+				<p>Now, convert the above steps one by one into pseudocode:</p>
+				<div class="code">
+					<pre>
+// Set the initial scores of the player and computer to 0
+// while the game is not over:
+    // Display "Rock, Paper, Scissors - Enter your choice or 'quit' to end the game."
+    // Get player choice from user
+   	// if player choice is "quit":
+        // break the loop
+    // Generate a random computer choice
+    // if player choice is equal to computer choice:
+        // Set result to "It's a tie!"
+    /* else if (player choice is "rock" and computer choice is "scissors") 
+		OR (player choice is "paper" and computer choice is "rock") 
+		OR (player choice is "scissors" and computer choice is "paper"): */
+        // Set result to "You win!"
+        // Increment player score by 1
+    // else:
+        // Set result to "Computer wins!"
+        // Increment computer score by 1
+    // Display player choice, Computer choice, and result
+    // Display player score and computer score
+// Display the final score of player and computer
+					</pre>
+				</div>
+			</div>
+
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>I didn't face much of a challenge this time.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>I have overcome all the difficulties that have come my way. (Please see the slide summary)</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>What the instructor said in class was of great help to me in this lab, especially my thoughts on web page text layout.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+					<p>I have put the results of this lab in the Introduction, Problem-solving, and Pseudocode sections at the beginning of this page.</p>
 			</div>
 		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
 		</nav>
 	</main>
 </body>

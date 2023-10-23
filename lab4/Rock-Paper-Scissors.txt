@@ -1,0 +1,10 @@
+1. Create variables to track player and computer choices and scores.
+2. Set up a loop that allows the game to run multiple times until the player decides to quit.
+3. Within the loop, display a menu that allows the player to choose between rock, paper, or scissors, as well as the option to exit the game.
+4. Players are prompted to enter their choice (rock, paper, or scissors) and validate their input.
+5. Computer-generated random selection (rock, paper, or scissors).
+6. Compare the player and computer choices to determine the winner of the round according to the rules of rock-paper-scissors.
+7. Update scores based on round results.
+8. Display the results of this round, including the player's choice, the computer's choice, and the winner of this round.
+9. Ask the player if they want to play another round. If not, exit the game loop.
+10. When the player decides to exit the game loop, display the final score.
