@@ -1,21 +1,26 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/*
+ * index.js - Lab 8 - Anon Functions and Callbacks
+ * Author: Jiecheng Zhu
+ * Date: Nov. 4, 2023
+ * License: Public Domain
+ */
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// Function
+function makeDouble(x) {
+  return x * x;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// Test function
+console.log("2 * 2 =", makeDouble(2));
+console.log("(-1) * (-1) =", makeDouble(-1));
 
-// let's get this party started
-main();
+const arrNum = [-2, 0, 2, 3, 5, 7];
+console.log("My array", arrNum);
+
+var result1 = arrNum.map(makeDouble);
+console.log("Test of double array:", result1);
+
+var result2 = arrNum.map(function(x){
+  return x ** 0.5;
+})
+console.log("Squareroot of array:", result2);
