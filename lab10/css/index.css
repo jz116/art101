@@ -10,6 +10,17 @@ h1 {
     color: #006cab;
 }
 
+.text p {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #ffcea6;
+    color: #006cab;
+    font-family: sans-serif;
+}
+
 h3 {
     font-family: "Lucida Console", Courier, monospace;
     color: #006cab;
