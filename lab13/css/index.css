@@ -1,0 +1,16 @@
+h1,h2,p {
+    font-family: sans-serif;
+    color: #006cab;
+}
+  
+h1 {
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-size: 200%;
+    color: #006cab;
+}
+
+h3 {
+    font-family: "Lucida Console", Courier, monospace;
+    color: #006cab;
+}
