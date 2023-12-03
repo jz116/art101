@@ -1,21 +1,49 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/*
+ * index.js - Lab 15 - AJAX
+ * Author: Jiecheng Zhu
+ * Date: Dec. 2, 2023
+ * License: Public Domain
+ */
 
-// Constants
+// Star Wars API
+/*
+import { axios } from "@pipedream/platform"
+export default defineComponent({
+  props: {
+    swapi: {
+      type: "app",
+      app: "swapi",
+    }
+  },
+  async run({steps, $}) {
+    return await axios($, {
+      url: `https://swapi.dev/api/films/1/`,
+    })
+  },
+})
+*/
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// AJAX
+$(document).ready(function() {
+  $("#activate").click(function() {
+    $.ajax({
+      url: "https://swapi.dev/api/films/1/",
+      type: "GET",
+      dataType: "json",
+      data: {
+        id: 1,
+        api_key: "blahblahblah",
+      },
+      success: function(data) {
+        // Display the output in the output div
+        $("#output").text(JSON.stringify(data, null, 2));
+        console.log(data);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        // Handle errors
+        $("#output").text(JSON.stringify(jqXHR, null, 2));
+        console.log("Error:", textStatus, errorThrown);
+      }
+    });
+  });
+});
